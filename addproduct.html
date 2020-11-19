@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="side right"><div class="top full-2">
+            <input href="dashboard.html" type="button" onclick="window.history.back();" value="უკან">
+            <h1>შეკვეთა <span class="styled"># 5</span></h1>
+        </div>
+        <div class="bot">
+           
+           
+            
+            <div class="orders-header add">
+               
+                <span>დასახელება</span><p class="name">რაოდენობა</p><p class="price">ფასი</p>
+            </div>
+            <div  style="height:60%;" class="orders add">
+                <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><button><img src="./images/delete.svg" alt=""></button><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae reprehenderit, nisi deserunt aperiam libero vitae quos quis tenetur animi modi praesentium suscipit. Ratione quibusdam culpa nam asperiores quod nesciunt officia.</p></div>           
+                <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><button><img src="./images/delete.svg" alt=""></button><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae reprehenderit, nisi deserunt aperiam libero vitae quos quis tenetur animi modi praesentium suscipit. Ratione quibusdam culpa nam asperiores quod nesciunt officia.</p></div> 
+                <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><button><img src="./images/delete.svg" alt=""></button><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae reprehenderit, nisi deserunt aperiam libero vitae quos quis tenetur animi modi praesentium suscipit. Ratione quibusdam culpa nam asperiores quod nesciunt officia.</p></div> 
+                <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><button><img src="./images/delete.svg" alt=""></button><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae reprehenderit, nisi deserunt aperiam libero vitae quos quis tenetur animi modi praesentium suscipit. Ratione quibusdam culpa nam asperiores quod nesciunt officia.</p></div> 
+            </div>
+            <input type="submit" id="addOrder" value="შეკვეთის დამატება">
+        
+        </div>
+        
+        </div>
+        <div class="side right">
+            <form class="addProducts" action="addproduct.php">
+                <div class="row"><input type="text" name="price" placeholder="ფასი" id="price"><input type="button" value="-">
+                    <input type="text" name="quantity" value="1" id="quantity"><input type="button" value="+"></div>
+                <div class="row"><div class="saleContainer selector">
+                    <select name="size" id="size" class="standard">
+                        
+                        <option value="0" selected>0%</option>
+                        <option value="0" >0%</option>
+                        <option value="10">10%</option>
+                        <option value="20">20%</option>
+                        <option value="30">30%</option>
+                        <option value="40">40%</option>
+                        <option value="50">50%</option>
+                        <option value="60">60%</option>
+                        <option value="70">70%</option>
+                        <option value="80">80%</option>
+                        <option value="90">90%</option>
+        
+                    </select>
+        
+                    <a href="javascript:void(0)">0%</a>
+                    <a href="javascript:void(0)" >10%</a>
+                    <a href="javascript:void(0)" >20%</a>
+                    <a href="javascript:void(0)" >30%</a>
+                    <a href="javascript:void(0)" >40%</a>
+                    <a href="javascript:void(0)">50%</a>
+                    <a href="javascript:void(0)" >60%</a>
+                    <a href="javascript:void(0)" >70%</a>
+                    <a href="javascript:void(0)" >80%</a>
+                    <a href="javascript:void(0)" >90%</a>
+        
+                </div></div>
+                <input type="text" placeholder="კომენტარი" name="description" id="description">
+                <div class="row"><div class="clothesContainer selector">
+                    <select name="size" id="size" class="standard">
+                       
+                        <option value="0" selected>კაბა</option>
+                        <option value="1">კაბა</option>
+                        <option value="2">ქურთუკი</option>
+                        <option value="3">ჟილეტი</option>
+                        <option value="4">მაისური/პერანგი</option>
+                        <option value="5">პალტო</option>
+                        <option value="6">პიჯაკი</option>
+                        <option value="7">ჟაკეტი</option>
+                        <option value="8">შარვალი</option>
+                        <option value="9">სხვადასხვა</option>
+                    </select>
+        
+                    <a href="javascript:void(0)"  >კაბა</a>
+                    <a href="javascript:void(0)" >ქურთუკი</a>
+                    <a href="javascript:void(0)"  >ჟილეტი</a>
+                    <a href="javascript:void(0)" >მაისური/პერანგი</a>
+                    <a href="javascript:void(0)"  >პალტო</a>
+                    <a href="javascript:void(0)"  >პიჯაკი</a>
+                    <a href="javascript:void(0)" >ჟაკეტი</a>
+                    <a href="javascript:void(0)"  >შარვალი</a>
+                    <a href="javascript:void(0)" >სხვადასხვა</a>
+                    
+        
+                </div></div>
+                <input type="submit" id="addItem" value="პროდუქტის დამატება">
+            </form>
+        </div>
+    
+    </section>
+    
+   
+    <script src="./js/main.js"></script>
+</body>
+</html>

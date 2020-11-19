@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section class="dashboard">
+        <div class="side left"><div class="top"><input type="text" placeholder="ძებნა" name="search" id="search"><input type="button" value="დღის დახურვა"></div>
+    <div class="bot">
+        <div class="bot-header">
+            <span>შეკვეთების ისტორია</span><input class="date" type="date" name="date" id="date"><button class="scanner"><img   src="./images/Iconly-Bold-Scan.svg" alt="Scanner"></button>
+        </div>
+        <div class="orders-header">
+           
+            <span>შეკვეთა</span><p class="name">მომხმარებელი</p><p class="price">ფასი</p>
+        </div>
+        <div class="orders" id="orders">
+            <a href="userdashboard.html"><div class="order"><span class="styled"># 1</span><p class="name">გიორგი გორდიაშვილი</p><p class="price">150ლ</p></div></a>
+            <a href="userdashboard.html"><div class="order"><span class="styled"># 2</span><p class="name">ლაშა გორდიაშვილი</p><p class="price">150ლ</p></div></a>
+            <a href="userdashboard.html"><div class="order"><span class="styled"># 3</span><p class="name">ნინი გორდიაშვილი</p><p class="price">150ლ</p></div></a>
+            <a href="userdashboard.html"><div class="order"><span class="styled"># 4</span><p class="name">დავით ოსაძე</p><p class="price">150ლ</p></div></a>
+            <a href="userdashboard.html"><div class="order"><span class="styled"># 5</span><p class="name">გაგი მურჯიკნელი</p><p class="price">150ლ</p></div></a>
+    </div>
+    <div class="orders-footer">
+        <div><p>რაოდენობა</p><p class="left">2</p><p>ქეში</p><p class="left">115ლ</p> </div>
+        <div><p>რაოდენობა</p><p class="left">2</p><p>ბარათი</p><p class="left">115ლ</p> </div>
+    </div>
+    </div>
+    
+</div>
+<div class="side right"><div class="top">
+    <input type="text" onkeyup="searchUser(this);" placeholder="მომხმარებლის ძებნა" name="search" id="search">
+    <input  type="button" id="adduser" value="მომხმარებლის დამატება">
+    
+</div>
+<div class="bot">
+    <div id="search-output"><div class="users">
+        <div class="user">
+            <button><span class="name">გიორგი გორდიაშვილი</span>
+                +995597147515</button>
+        </div>
+        <div class="user">
+            <button><span class="name">გიორგი გორდიაშვილი</span>
+                +995597147515</button>
+        </div>
+        <div class="user">
+            <button><span class="name">გიორგი გორდიაშვილი</span>
+                +995597147515</button>
+        </div>
+    </div></div>
+    <div id="add-user"><div class="users">
+        <div class="user">
+            <form action="adduser.php">
+                <input placeholder="სახელი" type="text" name="name" id="name">
+                    <input placeholder="გვარი" type="text" name="surname" id="surname">
+               
+                <input placeholder="მობილურის ნომერი" type="text" name="mobile" id="mobile">
+                <input placeholder="მისამართი" type="text" name="address" id="address">
+                <input placeholder="საიდენტიფიკაციო კოდი" type="text" name="identification" id="identification">
+                <input type="submit" value="მომხმარებლის დამატება">
+            </form>
+        </div>
+    </div></div>
+    <div class="bot-header">
+        <span>შეკვეთის დეტალები</span><div></div><span>შეკვეთა <span class="styled"># 1 </span></span>
+    </div>
+    <div class="orders-header">
+       
+        <span>დასახელება</span><p class="name">რაოდენობა</p><p class="price">ფასი</p>
+    </div>
+    <div class="orders" >
+        <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt animi eaque commodi neque, sit dolore at? Cupiditate nisi ea maiores adipisci eaque, nobis ipsam esse aliquam nesciunt fugit dicta atque.</p></div>
+        <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt animi eaque commodi neque, sit dolore at? Cupiditate nisi ea maiores adipisci eaque, nobis ipsam esse aliquam nesciunt fugit dicta atque.</p></div>
+
+        <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt animi eaque commodi neque, sit dolore at? Cupiditate nisi ea maiores adipisci eaque, nobis ipsam esse aliquam nesciunt fugit dicta atque.</p></div>
+
+        <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt animi eaque commodi neque, sit dolore at? Cupiditate nisi ea maiores adipisci eaque, nobis ipsam esse aliquam nesciunt fugit dicta atque.</p></div>
+
+        <div class="item"><span class="bold">პალტო</span><p class="raod">1</p><p class="price">150ლ</p><div class="description-show"></div><p class="description-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt animi eaque commodi neque, sit dolore at? Cupiditate nisi ea maiores adipisci eaque, nobis ipsam esse aliquam nesciunt fugit dicta atque.</p></div>
+    </div>
+
+</div>
+
+</div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
